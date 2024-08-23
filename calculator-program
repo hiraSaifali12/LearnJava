@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the num1");
+        int num1=in.nextInt();
+        System.out.println("enter the num2");
+        int num2=in.nextInt();
+         System.out.println("enter the operator");
+        char op=in.next().charAt(0);
+        if(op=='+'){
+            int sum = num1 + num2;
+            System.out.println("the sum of two no : "+ sum);
+        }
+        else if(op=='-'){
+            int sub = num1 - num2;
+            System.out.println("the subtract of two no : "+ sub);
+        }
+        else if(op=='*'){
+            int mul = num1 * num2;
+            System.out.println("the multipication of two no : "+ mul);
+        }
+        else if(op=='/'){
+            int div = num1 / num2;
+            System.out.println("the division of two no : "+ div);
+        }
+        else{
+            System.out.println("please enter the valid operator");
+        }
+        
+    }
+}
