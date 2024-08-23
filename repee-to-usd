@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+          System.out.println("enter the rupees");
+       int rupee = in.nextInt();
+       int USD = rupee/83;
+       System.out.println("the USD currency $ : "+ USD);
+       
+    }
+}
