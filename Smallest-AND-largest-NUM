@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the first number");
+        int first = in.nextInt();
+         System.out.println("enter the second number");
+         int second = in.nextInt();
+          System.out.println("enter the third number");
+          int third = in.nextInt();
+          int largestNum = largest(first,second,third);
+          System.out.println(largestNum);
+          int smallestNum = smallest(first,second,third);
+          System.out.println(smallestNum);
+          
+    }
+    static int largest(int a , int b , int c){
+        int max= a;
+        if(b>a){
+            max= b;
+        }
+        if(c>a){
+            max=c;
+        }
+        return max;
+    }
+    static int smallest(int a , int b, int c){
+        int min = a;
+        if(b<a){
+            min = b;
+        }
+        if (c<a){
+            min = c;
+        }
+        return min;
+    }
+}
