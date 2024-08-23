@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the num");
+        int num = in.nextInt();
+        int temp= num;
+        int r , sum=0;
+        while(num>0){
+        r = num%10;
+        num = num/10;
+        sum = sum + r*r*r;
+        
+        } 
+        if(temp==sum){
+            System.out.println("number is armstrong");
+        }
+        else{
+            System.out.println("number is not armstrong");
+        }
+    }
+}
