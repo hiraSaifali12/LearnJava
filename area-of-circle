@@ -1,0 +1,11 @@
+import java.util.Scanner;
+//Area Of Circle Java Program
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+          System.out.println("enter the redius");
+       double red = in.nextDouble();
+      double area = Math.PI * red * red;
+        System.out.println("area of circle is :"+ area);
+    }
+}
