@@ -9,7 +9,7 @@ int num1=sc.nextInt();
 System.out.print("Enter the second number: ");
 int num2=sc.nextInt();
 //this method reads value for num2 providing by user
-sc.close();//closing the scanner class
+sc.close();
 int Total=calcTotal(num1,num2); 
 System.out.println("Sum of two numbers  "+Total);
 }
