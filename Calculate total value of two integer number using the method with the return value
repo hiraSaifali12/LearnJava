@@ -16,6 +16,6 @@ System.out.println("Sum of two numbers  "+Total);
 //calcTotal method
 public static int calcTotal(int x,int y){
 int result=x+y;
-return result;//return result to main
+return result;
 }
 }
