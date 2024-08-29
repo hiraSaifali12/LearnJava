@@ -10,7 +10,6 @@ class HelloWorld {
         r = num%10;
         num = num/10;
         sum = sum + r*r*r;
-        
         } 
         if(temp==sum){
             System.out.println("number is armstrong");
