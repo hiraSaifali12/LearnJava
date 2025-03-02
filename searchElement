@@ -1,0 +1,23 @@
+class Main {
+    public static void main(String[] args) {
+        //System.out.println("Try programiz.pro");
+        int[] nums={23,34,45,23,55,-22,10,14};
+        int target=10;
+        int ans=linearSearch(nums,target);
+        System.out.println(ans);
+    }
+    public static int linearSearch(int[] nums,int target){
+        if(nums.length==0){
+            return -1;
+        }
+        for(int i=0;i<nums.length;i++){
+            int element=nums[i];
+            if(element==target){
+                return element;
+            }
+        }
+        return -1;
+    }
+    
+    public static int 
+}
