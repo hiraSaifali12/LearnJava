@@ -1,0 +1,36 @@
+
+class Main {
+    public static void main(String[] args) {
+
+        String name="hira";// toCharArray==['h','i','r','a']
+        char target='h';
+        boolean ans=stringSearch(name,target);
+        boolean ans2=stringSearch2(name,target);
+
+       // System.out.println(ans);
+       System.out.println(ans2);
+        
+    }
+    public static boolean stringSearch(String name,char target){
+        if(name.length()==0){
+            return false;
+        }
+        for(int i=0;i<name.length();i++){
+            if(target==name.charAt(i)){
+                return true;
+            }
+        }
+      return false;  
+    }
+    public static boolean stringSearch2(String name,char target){
+        if(name.length()==0){
+            return false;
+        }
+        for(char str : name.toCharArray()){
+            if(str==target){
+                return true;
+            }
+        }
+        return false;
+    }
+}
